@@ -150,6 +150,7 @@ This code was assembled from separate working sessions, so a few filenames don't
 
 ![ML Classifiers Implementation Pipeline](docs/figures/ml_classifiers_pipeline.jpg)
 
+
 ### 3. Deep Learning
 
 | Model | Architecture | Pipeline |
@@ -180,6 +181,24 @@ This code was assembled from separate working sessions, so a few filenames don't
 - Delivered through a MATLAB App Designer GUI (`app/app1.m`)
 
 ---
+## 📦 Pre-trained Models
+
+To save users from spending several hours training the deep learning models, the pre-trained `.mat` model files are provided in this repository (or via GitHub Releases if they exceed GitHub's file size limit).
+
+Available models:
+- Fine-tuned ResNet18 (Binary Classification)
+- MobileNetV2
+- Custom MobileNet
+- Custom EfficientNet-B0
+- Soft Voting Ensemble Models
+
+With these models, users can:
+- Run inference directly
+- Evaluate performance on the test dataset
+- Launch the MATLAB application without retraining
+- Reproduce the reported results
+
+> **Note:** If you wish to retrain the models, use the training scripts provided in the repository. Training time depends on the available hardware and may take several hours.
 
 ## 📊 Dataset
 
