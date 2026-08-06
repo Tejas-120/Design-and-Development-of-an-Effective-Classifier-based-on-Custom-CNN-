@@ -54,7 +54,7 @@ brain-tumour-classification/
 ├── .gitignore
 ├── docs/
 │   ├── Project_Report.pdf
-│   └── figures/                                     # Diagrams & screenshots (from final presentation)
+│   └──                                     # Diagrams & screenshots (from final presentation)
 │       ├── matlab_app_gui_screenshot.jpg
 │       ├── ml_classifiers_block_diagram.jpg
 │       ├── multiclass_ml_block_diagram.jpg
