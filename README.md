@@ -157,7 +157,7 @@ This code was assembled from separate working sessions, so a few filenames don't
 |---|---|---|
 | Custom CNN (binary) | ![ResNet18 Architecture](docs/custom_cnn_resnet18_architecture.jpg) | ![ResNet18 Pipeline](docs/custom_cnn_resnet18_pipeline.jpg) |
 | MobileNetV2 (multiclass) | ![MobileNetV2 Architecture](docs/mobilenetv2_architecture.jpg) | ![MobileNetV2 Pipeline](docs/mobilenetv2_pipeline.jpg) |
-| Custom EfficientNet-B0 (multiclass) | ![EfficientNet-B0 Architecture](docs/efficientnet_b0_architecture.jpg) | ![EfficientNet-B0 Pipeline](docs/figures/efficientnet_b0_pipeline.jpg) |
+| Custom EfficientNet-B0 (multiclass) | ![EfficientNet-B0 Architecture](docs/efficientnet_b0_architecture.jpg) | ![EfficientNet-B0 Pipeline](docs/efficientnet_b0_pipeline.jpg) |
 | Custom MobileNet (multiclass) | ![Custom MobileNetV2 Architecture](docs/custom_mobilenetv2_architecture.jpg) | ![Custom MobileNet Pipeline](docs/custom_mobilenet_pipeline.jpg) |
 
 - **Custom CNN** — fine-tuned ResNet18 (binary classification)
