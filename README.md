@@ -140,25 +140,25 @@ This code was assembled from separate working sessions, so a few filenames don't
 - Z-score normalization
 - Data augmentation: rotation, flipping, scaling, translation
 
-![ML Classifiers Block Diagram](docs/figures/ml_classifiers_block_diagram.jpg)
-![Multiclass ML Block Diagram](docs/figures/multiclass_ml_block_diagram.jpg)
+![ML Classifiers Block Diagram](docs/ml_classifiers_block_diagram.jpg)
+![Multiclass ML Block Diagram](docs/multiclass_ml_block_diagram.jpg)
 
 ### 2. Classical Machine Learning
 - **SVM** — RBF kernel (binary: `fitcsvm`; multiclass: `fitcecoc` one-vs-one)
 - **KNN** — instance-based (binary: k=5; multiclass: weighted, k=7)
 - **Naïve Bayes** — probabilistic baseline (multiclass: kernel distribution)
 
-![ML Classifiers Implementation Pipeline](docs/figures/ml_classifiers_pipeline.jpg)
+![ML Classifiers Implementation Pipeline](docs/ml_classifiers_pipeline.jpg)
 
 
 ### 3. Deep Learning
 
 | Model | Architecture | Pipeline |
 |---|---|---|
-| Custom CNN (binary) | ![ResNet18 Architecture](docs/figures/custom_cnn_resnet18_architecture.jpg) | ![ResNet18 Pipeline](docs/figures/custom_cnn_resnet18_pipeline.jpg) |
-| MobileNetV2 (multiclass) | ![MobileNetV2 Architecture](docs/figures/mobilenetv2_architecture.jpg) | ![MobileNetV2 Pipeline](docs/figures/mobilenetv2_pipeline.jpg) |
-| Custom EfficientNet-B0 (multiclass) | ![EfficientNet-B0 Architecture](docs/figures/efficientnet_b0_architecture.jpg) | ![EfficientNet-B0 Pipeline](docs/figures/efficientnet_b0_pipeline.jpg) |
-| Custom MobileNet (multiclass) | ![Custom MobileNetV2 Architecture](docs/figures/custom_mobilenetv2_architecture.jpg) | ![Custom MobileNet Pipeline](docs/figures/custom_mobilenet_pipeline.jpg) |
+| Custom CNN (binary) | ![ResNet18 Architecture](docs/custom_cnn_resnet18_architecture.jpg) | ![ResNet18 Pipeline](docs/custom_cnn_resnet18_pipeline.jpg) |
+| MobileNetV2 (multiclass) | ![MobileNetV2 Architecture](docs/mobilenetv2_architecture.jpg) | ![MobileNetV2 Pipeline](docs/mobilenetv2_pipeline.jpg) |
+| Custom EfficientNet-B0 (multiclass) | ![EfficientNet-B0 Architecture](docs/efficientnet_b0_architecture.jpg) | ![EfficientNet-B0 Pipeline](docs/figures/efficientnet_b0_pipeline.jpg) |
+| Custom MobileNet (multiclass) | ![Custom MobileNetV2 Architecture](docs/custom_mobilenetv2_architecture.jpg) | ![Custom MobileNet Pipeline](docs/custom_mobilenet_pipeline.jpg) |
 
 - **Custom CNN** — fine-tuned ResNet18 (binary classification)
 - **MobileNetV2** — lightweight, transfer-learned (multiclass)
@@ -167,14 +167,14 @@ This code was assembled from separate working sessions, so a few filenames don't
 
 ### 4. Ensemble Learning
 
-![Soft Voting Block Diagram](docs/figures/soft_voting_block_diagram.jpg)
+![Soft Voting Block Diagram](docs/soft_voting_block_diagram.jpg)
 
 - **Soft Voting** across 5 CNNs (MobileNetV2, ResNet18, ResNet50, DenseNet201, EfficientNet-B0) for binary classification — `binary_classification/ensemble/soft_voting_binary.m`. Also reports Majority Vote and Test-Time Augmentation (TTA) variants alongside the primary Average Fusion (soft voting) result.
 - **Confidence-weighted hybrid voting** (EfficientNet-B0 + Custom MobileNet) for multiclass classification, implemented in `hybrid_soft_voting_multiclass.m`
 
 ### 5. Explainable AI
 
-![GUI + LLM Architecture](docs/figures/gui_llm_architecture.jpg)
+![GUI + LLM Architecture](docs/gui_llm_architecture.jpg)
 
 - Predicted tumour class passed to a locally-hosted **Phi-3 (Ollama)** LLM via API
 - Generates plain-language explanations: description, likely causes, symptoms, precautions
@@ -324,15 +324,15 @@ app = app1;
 | Custom MobileNet | 95.65% |
 | **Soft Voting Technique** | **96.03%** |
 
-![Binary Classification Results](docs/figures/binary_classification_results_chart.jpg)
-![Multiclass Classification Results](docs/figures/multiclass_classification_results_chart.jpg)
-![Soft Voting Results Table](docs/figures/soft_voting_results_table.jpg)
+![Binary Classification Results](docs/binary_classification_results_chart.jpg)
+![Multiclass Classification Results](docs/multiclass_classification_results_chart.jpg)
+![Soft Voting Results Table](docs/soft_voting_results_table.jpg)
 
 **Confusion Matrices & Sample Predictions**
 
-![Confusion Matrices — Binary](docs/figures/confusion_matrices_binary.jpg)
-![Confusion Matrices — Multiclass](docs/figures/confusion_matrices_multiclass.jpg)
-![Sample Predictions](docs/figures/sample_predictions.jpg)
+![Confusion Matrices — Binary](docs/confusion_matrices_binary.jpg)
+![Confusion Matrices — Multiclass](docs/confusion_matrices_multiclass.jpg)
+![Sample Predictions](docs/sample_predictions.jpg)
 
 ---
 
@@ -349,7 +349,7 @@ app = app1;
 
 ## 🌍 SDG Alignment
 
-![SDG Contribution](docs/figures/sdg_contribution.jpg)
+![SDG Contribution](docs/sdg_contribution.jpg)
 
 - **SDG 3 – Good Health & Well-Being:** Enables faster, more consistent tumour detection to support clinical decision-making.
 - **SDG 9 – Industry, Innovation & Infrastructure:** Demonstrates scalable AI-driven infrastructure for medical diagnostics.
