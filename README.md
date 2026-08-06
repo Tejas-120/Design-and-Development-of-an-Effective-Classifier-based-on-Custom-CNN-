@@ -220,13 +220,12 @@ The original Kaggle dataset ships with 4 classes (`glioma_tumor`, `meningioma_tu
 
 `no_tumor` excluded; the three tumour classes kept separate.
 
-| Class | Training | Testing | Total |
-|---|---|---|---|
-| Glioma | 826 | 100 | 926 |
-| Meningioma | 822 | 115 | 937 |
-| Pituitary | 827 | 74 | 901 |
-| **Total** | **2,475** | **289** | **2,764** |
-
+| Tumour Class | Train Count (70%) | Validation Count (15%) | Test Count (15%) | Total |
+|--------------|------------------:|-----------------------:|-----------------:|------:|
+| Glioma       | 648 | 139 | 139 | 926 |
+| Meningioma   | 656 | 141 | 141 | 938 |
+| Pituitary    | 631 | 135 | 135 | 901 |
+| **Total**    | **1935** | **415** | **415** | **2765** |
 > **Note:** Datasets are not included in this repository due to size (see `.gitignore`). Download the source from the Kaggle link above and regroup it into the two structures above, or use your own copies of these folders — see the folder-mapping table below for exactly where each script expects them.
 
 **How each script's `datasetRoot` maps to these folders:**
