@@ -1,0 +1,39 @@
+# MATLAB
+*.asv
+*.m~
+*.mex*
+*.mat
+slprj/
+codegen/
+*.autosave
+
+# MATLAB App Designer temp
+*.mlapp.bak
+
+# Trained models / checkpoints (usually large — use Git LFS or external storage)
+*.onnx
+*.h5
+*.pt
+*.pb
+trained_models/
+checkpoints/
+
+# Dataset (large — do not commit raw MRI images)
+data/binary_classification/
+data/multiclass_classification/
+*.jpg
+*.jpeg
+*.png
+*.dcm
+!docs/**/*.png
+!results/figures/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
